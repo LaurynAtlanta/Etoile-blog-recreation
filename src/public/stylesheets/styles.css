@@ -154,11 +154,11 @@ nav #navlinks #socials a {
 }
 
 .posts {
-  margin: 60px 140px;
+  margin: 0px 140px;
 }
 
 .posts .postcontent {
-  width: 38%;
+  width: 39%;
   position: absolute;
   height: 40%;
   padding: 5px 10px;
@@ -220,6 +220,10 @@ nav #navlinks #socials a {
   border: 10px solid #fcf3ed;
 }
 
+.posts .post {
+  margin: 80px 0px;
+}
+
 .posts .one .firstimage {
   background-image: url("/src/public/images/photo2.jpg");
 }
@@ -231,18 +235,24 @@ nav #navlinks #socials a {
 }
 
 .posts .one .postcontent {
-  top: 109%;
+  top: 112%;
   right: 11%;
 }
 
 .posts .two .firstimage {
   background-image: url("/src/public/images/photo3.jpg");
+  margin-left: auto;
 }
 
 .posts .two .secondimage {
   background-image: url("/src/public/images/photo1.jpg");
-  top: 140%;
-  right: 10%;
+  top: 230%;
+  left: 10%;
+}
+
+.posts .two .postcontent {
+  top: 287%;
+  left: 11%;
 }
 
 .posts .three .firstimage {
@@ -251,8 +261,13 @@ nav #navlinks #socials a {
 
 .posts .three .secondimage {
   background-image: url("/src/public/images/photo1.jpg");
-  top: 140%;
+  top: 360%;
   right: 10%;
+}
+
+.posts .three .postcontent {
+  top: 334%;
+  right: 11%;
 }
 
 .posts .four .firstimage {
@@ -261,8 +276,13 @@ nav #navlinks #socials a {
 
 .posts .four .secondimage {
   background-image: url("/src/public/images/photo1.jpg");
-  top: 140%;
+  top: 450%;
   right: 10%;
+}
+
+.posts .four .postcontent {
+  top: 509%;
+  right: 11%;
 }
 
 .posts .five .firstimage {
@@ -271,8 +291,13 @@ nav #navlinks #socials a {
 
 .posts .five .secondimage {
   background-image: url("/src/public/images/photo1.jpg");
-  top: 140%;
+  top: 585%;
   right: 10%;
+}
+
+.posts .five .postcontent {
+  top: 557%;
+  right: 11%;
 }
 
 footer {
