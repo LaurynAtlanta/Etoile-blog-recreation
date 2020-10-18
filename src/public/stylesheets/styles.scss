@@ -19,14 +19,32 @@ $lightpink:  #fcf3ed;
     background-position: center;
     background-size: cover;
 }
-@mixin posts{
+
+@mixin content{
+    @include contentbasic;
+    @include links;
+        width: 38%;
+        position: absolute;
+        height: 40%;
+        padding: 5px 10px;
+
+    .readmore{
+        @include readmore;
+    }
+}
+
+@mixin links{
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@mixin contentbasic{
     h1{
         font-family: $serif;
-        margin-bottom: 6px;
+        margin-bottom: 12px;
         font-size: 27px;
-        a{
-            text-decoration: none;
-        }
     }
     .category{
         font-family:$sansserif;
@@ -34,22 +52,46 @@ $lightpink:  #fcf3ed;
         margin-bottom: 8px;
         letter-spacing: 1.5px;
     }
-    a{
-        text-decoration: none;
-        color: black;
-    }
+
     p{
         opacity: 0.8;
         font-size: 15px;
         line-height: 1.4;
     }
-    .readmore{
+}
+
+@mixin readmore{
+        margin-top: 20px;
         background-color: black;
-        color: white;
+        border:none;
         font-family: $sansserif;
         padding: 8px 10px;
         font-size: 12px;
         letter-spacing: 1.3px;
+        border: none;
+        outline: none;
+        a{
+            color: white;
+        }
+}
+
+@mixin posts{
+
+    .postcontent{
+        @include content;
+    }
+
+    .firstimage{
+        @include featuredimage;
+        height: 100vh;
+        width:50%;
+    }
+    .secondimage{
+        @include featuredimage;
+        height: 55vh;
+        width:45%;
+        position: absolute;
+        border: 10px solid $lightpink;
     }
 
 }
@@ -134,11 +176,13 @@ nav{
         left: 58%;
         top: 45%;
         padding: 25px;
-        @include posts;
+        @include contentbasic;
+        @include links;
     }
     .readmore{
+        @include readmore;
         position: absolute;
-        top: 105%;
+        top: 100%;
         right:0;
     }
 
@@ -159,7 +203,74 @@ nav{
 // ========================================================
 
 .posts{
-    .postcontent{
-        @include posts;
+    margin: 60px 140px;
+    @include posts;
+
+    .one{
+        .firstimage{
+            background-image: url('/src/public/images/photo2.jpg');
+        }
+        .secondimage{
+            background-image: url('/src/public/images/photo1.jpg');
+            top:140%;
+            right:10%;
+        }
+        .postcontent{
+            top: 109%;
+            right: 11%;
+        }
+    }
+    .two{
+        .firstimage{
+            background-image: url('/src/public/images/photo3.jpg');
+        }
+        .secondimage{
+            background-image: url('/src/public/images/photo1.jpg');
+            top:140%;
+            right:10%;
+        }
+    } 
+    .three{
+        .firstimage{
+            background-image: url('/src/public/images/photo4.jpg');
+        }
+        .secondimage{
+            background-image: url('/src/public/images/photo1.jpg');
+            top:140%;
+            right:10%;
+        }
+    } 
+    .four{
+        .firstimage{
+            background-image: url('/src/public/images/photo5.jpg');
+        }
+        .secondimage{
+            background-image: url('/src/public/images/photo1.jpg');
+            top:140%;
+            right:10%;
+        }
+    } 
+    .five{
+        .firstimage{
+            background-image: url('/src/public/images/photo6.jpg');
+        }
+        .secondimage{
+            background-image: url('/src/public/images/photo1.jpg');
+            top:140%;
+            right:10%;
+        }
+    } 
+}
+
+footer{
+    background-color: black;
+    color: white;
+
+    .disclaimers{
+        @include flexspace;
+        padding: 25px 150px;
+        font-family: $sansserif;
+        text-transform: uppercase;
+        font-size: 15px;
     }
 }

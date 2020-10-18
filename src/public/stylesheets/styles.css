@@ -102,12 +102,8 @@ nav #navlinks #socials a {
 
 #slider .slidercontent h1 {
   font-family: "Merriweather", serif;
-  margin-bottom: 6px;
+  margin-bottom: 12px;
   font-size: 27px;
-}
-
-#slider .slidercontent h1 a {
-  text-decoration: none;
 }
 
 #slider .slidercontent .category {
@@ -117,30 +113,34 @@ nav #navlinks #socials a {
   letter-spacing: 1.5px;
 }
 
-#slider .slidercontent a {
-  text-decoration: none;
-  color: black;
-}
-
 #slider .slidercontent p {
   opacity: 0.8;
   font-size: 15px;
   line-height: 1.4;
 }
 
-#slider .slidercontent .readmore {
+#slider .slidercontent a {
+  text-decoration: none;
+  color: black;
+}
+
+#slider .readmore {
+  margin-top: 20px;
   background-color: black;
-  color: white;
+  border: none;
   font-family: "Montserrat", sans-serif;
   padding: 8px 10px;
   font-size: 12px;
   letter-spacing: 1.3px;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
 }
 
-#slider .readmore {
-  position: absolute;
-  top: 105%;
-  right: 0;
+#slider .readmore a {
+  color: white;
 }
 
 #slider #whiteslider {
@@ -153,14 +153,21 @@ nav #navlinks #socials a {
   left: 0;
 }
 
-.posts .postcontent h1 {
-  font-family: "Merriweather", serif;
-  margin-bottom: 6px;
-  font-size: 27px;
+.posts {
+  margin: 60px 140px;
 }
 
-.posts .postcontent h1 a {
-  text-decoration: none;
+.posts .postcontent {
+  width: 38%;
+  position: absolute;
+  height: 40%;
+  padding: 5px 10px;
+}
+
+.posts .postcontent h1 {
+  font-family: "Merriweather", serif;
+  margin-bottom: 12px;
+  font-size: 27px;
 }
 
 .posts .postcontent .category {
@@ -170,23 +177,122 @@ nav #navlinks #socials a {
   letter-spacing: 1.5px;
 }
 
-.posts .postcontent a {
-  text-decoration: none;
-  color: black;
-}
-
 .posts .postcontent p {
   opacity: 0.8;
   font-size: 15px;
   line-height: 1.4;
 }
 
+.posts .postcontent a {
+  text-decoration: none;
+  color: black;
+}
+
 .posts .postcontent .readmore {
+  margin-top: 20px;
   background-color: black;
-  color: white;
+  border: none;
   font-family: "Montserrat", sans-serif;
   padding: 8px 10px;
   font-size: 12px;
   letter-spacing: 1.3px;
+  border: none;
+  outline: none;
+}
+
+.posts .postcontent .readmore a {
+  color: white;
+}
+
+.posts .firstimage {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 50%;
+}
+
+.posts .secondimage {
+  background-position: center;
+  background-size: cover;
+  height: 55vh;
+  width: 45%;
+  position: absolute;
+  border: 10px solid #fcf3ed;
+}
+
+.posts .one .firstimage {
+  background-image: url("/src/public/images/photo2.jpg");
+}
+
+.posts .one .secondimage {
+  background-image: url("/src/public/images/photo1.jpg");
+  top: 140%;
+  right: 10%;
+}
+
+.posts .one .postcontent {
+  top: 109%;
+  right: 11%;
+}
+
+.posts .two .firstimage {
+  background-image: url("/src/public/images/photo3.jpg");
+}
+
+.posts .two .secondimage {
+  background-image: url("/src/public/images/photo1.jpg");
+  top: 140%;
+  right: 10%;
+}
+
+.posts .three .firstimage {
+  background-image: url("/src/public/images/photo4.jpg");
+}
+
+.posts .three .secondimage {
+  background-image: url("/src/public/images/photo1.jpg");
+  top: 140%;
+  right: 10%;
+}
+
+.posts .four .firstimage {
+  background-image: url("/src/public/images/photo5.jpg");
+}
+
+.posts .four .secondimage {
+  background-image: url("/src/public/images/photo1.jpg");
+  top: 140%;
+  right: 10%;
+}
+
+.posts .five .firstimage {
+  background-image: url("/src/public/images/photo6.jpg");
+}
+
+.posts .five .secondimage {
+  background-image: url("/src/public/images/photo1.jpg");
+  top: 140%;
+  right: 10%;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer .disclaimers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 150px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
 }
 /*# sourceMappingURL=styles.css.map */
