@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat:wght@300;400;500;700&family=Mr+Dafoe&display=swap');
+
+$serif: 'Merriweather', serif;
+$sansserif: 'Montserrat', sans-serif;
+$logofont: 'Mr Dafoe', cursive;
+
+@mixin flexspace {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin featuredimage{
+    background-position: center;
+    background-size: cover;
+}
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fcf3ed;
+}
+
+nav{
+    padding: 0 140px;
+    @include flexspace;
+    height: 15vh;
+
+    #logo{
+        flex: 1;
+        font-family: $logofont;
+
+        a{
+            text-decoration: none;
+            font-size: 50px;
+            color: black;
+        }
+    }
+
+    #navlinks{
+        flex: 3;
+        @include flexspace;
+        list-style: none;
+        li{
+
+
+            a{
+                text-decoration: none;
+                font-family: $sansserif;
+                font-size: 12px;
+                font-weight: 500;
+                letter-spacing: 1.5px;
+                color: black;
+            }
+        }
+
+        #socials{
+            @include flexspace;
+            list-style: none;
+            a{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+#slider{
+    margin: 0 140px;
+    .sliderimage{
+        @include featuredimage;
+        background-image: url('../images/photo1.jpg');
+        height: 550px; 
+        width: 880px;
+    }
+    .slidercontent{
+
+    }
+}
