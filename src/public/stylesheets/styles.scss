@@ -3,6 +3,11 @@
 $serif: 'Merriweather', serif;
 $sansserif: 'Montserrat', sans-serif;
 $logofont: 'Mr Dafoe', cursive;
+$lightpink:  #fcf3ed;
+
+// ========================================================
+//MIXINS
+// ========================================================
 
 @mixin flexspace {
     display: flex;
@@ -14,6 +19,45 @@ $logofont: 'Mr Dafoe', cursive;
     background-position: center;
     background-size: cover;
 }
+@mixin posts{
+    h1{
+        font-family: $serif;
+        margin-bottom: 6px;
+        font-size: 27px;
+        a{
+            text-decoration: none;
+        }
+    }
+    .category{
+        font-family:$sansserif;
+        font-size: 13px;
+        margin-bottom: 8px;
+        letter-spacing: 1.5px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    p{
+        opacity: 0.8;
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    .readmore{
+        background-color: black;
+        color: white;
+        font-family: $sansserif;
+        padding: 8px 10px;
+        font-size: 12px;
+        letter-spacing: 1.3px;
+    }
+
+}
+
+// ========================================================
+//BASIC
+// ========================================================
+
 
 *{
     padding: 0;
@@ -22,9 +66,13 @@ $logofont: 'Mr Dafoe', cursive;
 }
 
 body{
-    background-color: #fcf3ed;
+    background-color: $lightpink;
 }
 
+
+// ========================================================
+// NAVIGATION 
+// ========================================================
 nav{
     padding: 0 140px;
     @include flexspace;
@@ -68,15 +116,50 @@ nav{
     }
 }
 
+// ========================================================
+//  HOMEPAGE HEADER
+// ========================================================
 #slider{
     margin: 0 140px;
     .sliderimage{
         @include featuredimage;
         background-image: url('../images/photo1.jpg');
-        height: 550px; 
-        width: 880px;
+        height: 83vh;
+        width: 70%;
     }
     .slidercontent{
+        background-color: $lightpink;
+        width: 32%;
+        position: absolute;
+        left: 58%;
+        top: 45%;
+        padding: 25px;
+        @include posts;
+    }
+    .readmore{
+        position: absolute;
+        top: 105%;
+        right:0;
+    }
 
+    #whiteslider{
+        width: 100%;
+        height: 70vh;
+        background-color: white;
+        position: absolute;
+        z-index: -1;
+        top:22%;
+        left:0;
+    }
+    
+}
+
+// ========================================================
+// POSTS
+// ========================================================
+
+.posts{
+    .postcontent{
+        @include posts;
     }
 }
