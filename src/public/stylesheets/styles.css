@@ -62,6 +62,10 @@ nav #navlinks li a {
   color: black;
 }
 
+nav #navlinks li a:hover {
+  color: #397488;
+}
+
 nav #navlinks #socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,7 +249,7 @@ nav #navlinks #socials a {
 }
 
 .posts .two .secondimage {
-  background-image: url("/src/public/images/photo1.jpg");
+  background-image: url("/src/public/images/photo11.png");
   top: 230%;
   left: 10%;
 }
@@ -260,7 +264,7 @@ nav #navlinks #socials a {
 }
 
 .posts .three .secondimage {
-  background-image: url("/src/public/images/photo1.jpg");
+  background-image: url("/src/public/images/photo10.png");
   top: 360%;
   right: 10%;
 }
@@ -303,6 +307,56 @@ nav #navlinks #socials a {
 footer {
   background-color: black;
   color: white;
+}
+
+footer .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .images .image {
+  width: 227.5px;
+  height: 200px;
+}
+
+footer .images .image1 {
+  background-image: url("/src/public/images/photo7.png");
+  background-position: center;
+  background-size: cover;
+}
+
+footer .images .image2 {
+  background-image: url("/src/public/images/photo8.png");
+  background-position: center;
+  background-size: cover;
+}
+
+footer .images .image3 {
+  background-image: url("/src/public/images/photo9.png");
+  background-position: center;
+  background-size: cover;
+}
+
+footer .images .image4 {
+  background-image: url("/src/public/images/photo10.png");
+  background-position: center;
+  background-size: cover;
+}
+
+footer .images .image5 {
+  background-image: url("/src/public/images/photo11.png");
+  background-position: center;
+  background-size: cover;
+}
+
+footer .images .image6 {
+  background-image: url("/src/public/images/photo12.png");
+  background-position: center;
+  background-size: cover;
 }
 
 footer .disclaimers {

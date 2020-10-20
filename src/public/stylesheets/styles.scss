@@ -146,6 +146,9 @@ nav{
                 letter-spacing: 1.5px;
                 color: black;
             }
+            a:hover{
+                color:rgb(57, 116, 136);
+            }
         }
 
         #socials{
@@ -163,27 +166,28 @@ nav{
 // ========================================================
 #slider{
     margin: 0 140px;
-    .sliderimage{
-        @include featuredimage;
-        background-image: url('../images/photo1.jpg');
-        height: 83vh;
-        width: 70%;
-    }
-    .slidercontent{
-        background-color: $lightpink;
-        width: 32%;
-        position: absolute;
-        left: 58%;
-        top: 45%;
-        padding: 25px;
-        @include contentbasic;
-        @include links;
-    }
-    .readmore{
-        @include readmore;
-        position: absolute;
-        top: 100%;
-        right:0;
+        .sliderimage{
+            @include featuredimage;
+            background-image: url('../images/photo1.jpg');
+            height: 83vh;
+            width: 70%;
+            transition: all 3s ease;
+        }
+        .slidercontent{
+            background-color: $lightpink;
+            width: 32%;
+            position: absolute;
+            left: 58%;
+            top: 45%;
+            padding: 25px;
+            @include contentbasic;
+            @include links;
+        }
+        .readmore{
+            @include readmore;
+            position: absolute;
+            top: 100%;
+            right:0;
     }
 
     #whiteslider{
@@ -230,7 +234,7 @@ nav{
             margin-left: auto;
         }
         .secondimage{
-            background-image: url('/src/public/images/photo1.jpg');
+            background-image: url('/src/public/images/photo11.png');
             top:230%;
             left:10%;
         }
@@ -244,7 +248,7 @@ nav{
             background-image: url('/src/public/images/photo4.jpg');
         }
         .secondimage{
-            background-image: url('/src/public/images/photo1.jpg');
+            background-image: url('/src/public/images/photo10.png');
             top:360%;
             right:10%;
         }
@@ -286,6 +290,39 @@ nav{
 footer{
     background-color: black;
     color: white;
+
+    .images{
+        display: flex;
+        align-items: center;
+        .image{
+            width: 227.5px;
+            height:200px;
+        }
+        .image1{
+            background-image: url('/src/public/images/photo7.png');
+            @include featuredimage;
+        }
+        .image2{
+            background-image: url('/src/public/images/photo8.png');
+            @include featuredimage;
+        }
+        .image3{
+            background-image: url('/src/public/images/photo9.png');
+            @include featuredimage;
+        }
+        .image4{
+            background-image: url('/src/public/images/photo10.png');
+            @include featuredimage;
+        }
+        .image5{
+            background-image: url('/src/public/images/photo11.png');
+            @include featuredimage;
+        }
+        .image6{
+            background-image: url('/src/public/images/photo12.png');
+            @include featuredimage;
+        }
+    }
 
     .disclaimers{
         @include flexspace;
