@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat:wght@300;400;500;700&family=Mr+Dafoe&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fcf3ed;
+}
+
+nav {
+  padding: 0 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15vh;
+}
+
+nav #logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: "Mr Dafoe", cursive;
+}
+
+nav #logo a {
+  text-decoration: none;
+  font-size: 50px;
+  color: black;
+}
+
+nav #navlinks {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+nav #navlinks li a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: black;
+}
+
+nav #navlinks li a:hover {
+  color: #397488;
+}
+
+nav #navlinks #socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+nav #navlinks #socials a {
+  margin-right: 10px;
+}
+
+.gallerysection {
+  margin: 50px 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gallerysection img {
+  width: 250px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .images .image {
+  width: 240px;
+  height: 240px;
+}
+
+footer .images .image1 {
+  background-image: url("/src/public/images/photo7.png");
+  background-position: center;
+  background-size: cover;
+}
+
+footer .images .image2 {
+  background-image: url("/src/public/images/photo8.png");
+  background-position: center;
+  background-size: cover;
+}
+
+footer .images .image3 {
+  background-image: url("/src/public/images/photo9.png");
+  background-position: center;
+  background-size: cover;
+}
+
+footer .images .image4 {
+  background-image: url("/src/public/images/photo10.png");
+  background-position: center;
+  background-size: cover;
+}
+
+footer .images .image5 {
+  background-image: url("/src/public/images/photo11.png");
+  background-position: center;
+  background-size: cover;
+}
+
+footer .images .image6 {
+  background-image: url("/src/public/images/photo12.png");
+  background-position: center;
+  background-size: cover;
+}
+
+footer .disclaimers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 150px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+/*# sourceMappingURL=gallery.css.map */
