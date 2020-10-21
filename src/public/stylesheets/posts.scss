@@ -15,22 +15,16 @@ $lightpink:  #fcf3ed;
     align-items: center;
 }
 
+@mixin flexColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 @mixin featuredimage{
     background-position: center;
     background-size: cover;
-}
-
-@mixin content{
-    @include contentbasic;
-    @include links;
-        width: 39%;
-        position: absolute;
-        height: 40%;
-        padding: 5px 10px;
-
-    .readmore{
-        @include readmore;
-    }
 }
 
 @mixin links{
@@ -43,55 +37,25 @@ $lightpink:  #fcf3ed;
 @mixin contentbasic{
     h1{
         font-family: $serif;
-        margin-bottom: 12px;
-        font-size: 27px;
-    }
-    .category{
-        font-family:$sansserif;
-        font-size: 13px;
-        margin-bottom: 8px;
-        letter-spacing: 1.5px;
+        margin: 13px 0;
+        font-weight: 600;
+        font-size: 25px;
+        @include links;
     }
 
     p{
+        font-family:$sansserif;
         opacity: 0.8;
-        font-size: 15px;
+        font-size: 11.5px;
         line-height: 1.4;
+        letter-spacing: 1.5px;
     }
-}
-
-@mixin readmore{
-        margin-top: 20px;
-        background-color: black;
-        border:none;
-        font-family: $sansserif;
-        padding: 8px 10px;
-        font-size: 12px;
-        letter-spacing: 1.3px;
-        border: none;
-        outline: none;
-        a{
-            color: white;
-        }
 }
 
 @mixin posts{
 
     .postcontent{
-        @include content;
-    }
-
-    .firstimage{
-        @include featuredimage;
-        height: 100vh;
-        width:50%;
-    }
-    .secondimage{
-        @include featuredimage;
-        height: 55vh;
-        width:45%;
-        position: absolute;
-        border: 10px solid $lightpink;
+        @include contentbasic;
     }
 
 }
@@ -161,127 +125,53 @@ nav{
     }
 }
 
-// ========================================================
-//  HOMEPAGE HEADER
-// ========================================================
-#slider{
-    margin: 0 170px;
-        .sliderimage{
-            @include featuredimage;
-            background-image: url('../images/photo1.jpg');
-            height: 83vh;
-            width: 70%;
-        }
-        .slidercontent{
-            background-color: $lightpink;
-            width: 32%;
-            position: absolute;
-            left: 58%;
-            top: 45%;
-            padding: 25px;
-            @include contentbasic;
-            @include links;
-        }
-        .readmore{
-            @include readmore;
-            position: absolute;
-            top: 100%;
-            right:0;
-    }
 
-    #whiteslider{
-        width: 100%;
-        height: 70vh;
-        background-color: white;
-        position: absolute;
-        z-index: -1;
-        top:22%;
-        left:0;
-    }
-    
-}
 
 // ========================================================
 // POSTS
 // ========================================================
 
 .posts{
-    margin: 0px 170px;
-    @include posts;
-
-    .post{
-        margin: 80px 0px;
-    }
+    margin: 50px 170px 70px;
+    @include flexspace;
 
     .one{
+        @include posts;
+        @include flexColumn;
         .firstimage{
             background-image: url('/src/public/images/photo2.jpg');
-        }
-        .secondimage{
-            background-image: url('/src/public/images/photo1.jpg');
-            top:140%;
-            right:10%;
+            @include featuredimage;
+            width:350px;
+            height:475px;
         }
         .postcontent{
-            top: 112%;
-            right: 11%;
+            @include flexColumn;
         }
     }
     .two{
+        @include posts;
+        @include flexColumn;
         .firstimage{
             background-image: url('/src/public/images/photo3.jpg');
-            margin-left: auto;
-        }
-        .secondimage{
-            background-image: url('/src/public/images/photo11.png');
-            top:230%;
-            left:10%;
+            @include featuredimage;
+            width:350px;
+            height:475px;
         }
         .postcontent{
-            top: 287%;
-            left: 11%;
+            @include flexColumn;
         }
     } 
     .three{
+        @include posts;
+        @include flexColumn;
         .firstimage{
             background-image: url('/src/public/images/photo4.jpg');
-        }
-        .secondimage{
-            background-image: url('/src/public/images/photo10.png');
-            top:360%;
-            right:10%;
+            @include featuredimage;
+            width:350px;
+            height:475px;
         }
         .postcontent{
-            top: 334%;
-            right: 11%;
-        }
-    } 
-    .four{
-        .firstimage{
-            background-image: url('/src/public/images/photo5.jpg');
-        }
-        .secondimage{
-            background-image: url('/src/public/images/photo1.jpg');
-            top:450%;
-            right:10%;
-        }
-        .postcontent{
-            top: 509%;
-            right: 11%;
-        }
-    } 
-    .five{
-        .firstimage{
-            background-image: url('/src/public/images/photo6.jpg');
-        }
-        .secondimage{
-            background-image: url('/src/public/images/photo1.jpg');
-            top:585%;
-            right:10%;
-        }
-        .postcontent{
-            top: 557%;
-            right: 11%;
+            @include flexColumn;
         }
     } 
 }

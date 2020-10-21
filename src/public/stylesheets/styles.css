@@ -11,7 +11,7 @@ body {
 }
 
 nav {
-  padding: 0 140px;
+  padding: 0 170px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,7 +56,7 @@ nav #navlinks {
 nav #navlinks li a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font-size: 11.5px;
   font-weight: 500;
   letter-spacing: 1.5px;
   color: black;
@@ -84,7 +84,7 @@ nav #navlinks #socials a {
 }
 
 #slider {
-  margin: 0 140px;
+  margin: 0 170px;
 }
 
 #slider .sliderimage {
@@ -158,7 +158,7 @@ nav #navlinks #socials a {
 }
 
 .posts {
-  margin: 0px 140px;
+  margin: 0px 170px;
 }
 
 .posts .postcontent {
@@ -319,8 +319,8 @@ footer .images {
 }
 
 footer .images .image {
-  width: 227.5px;
-  height: 200px;
+  width: 240px;
+  height: 240px;
 }
 
 footer .images .image1 {
