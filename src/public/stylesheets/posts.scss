@@ -82,7 +82,12 @@ body{
 nav{
     padding: 0 170px;
     @include flexspace;
-    height: 15vh;
+    height: 13vh;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    background-color: $lightpink;
+    z-index: 2;
 
     #logo{
         flex: 1;
@@ -90,7 +95,8 @@ nav{
 
         a{
             text-decoration: none;
-            font-size: 50px;
+            font-size: 40px;
+            padding-left: 20px;
             color: black;
         }
     }
@@ -132,7 +138,7 @@ nav{
 // ========================================================
 
 .posts{
-    margin: 50px 170px 70px;
+    margin: 150px 170px 70px;
     @include flexspace;
 
     .one{

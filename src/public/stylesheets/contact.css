@@ -21,7 +21,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 15vh;
+  height: 13vh;
   position: fixed;
   /* Set the navbar to fixed position */
   top: 0;
@@ -41,7 +41,8 @@ nav #logo {
 
 nav #logo a {
   text-decoration: none;
-  font-size: 50px;
+  font-size: 40px;
+  padding-left: 20px;
   color: black;
 }
 
@@ -128,6 +129,9 @@ nav #navlinks #socials a {
 }
 
 .contactcontent .contactform {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 50px;
   margin-right: 40px;
   width: 100%;
 }
@@ -142,6 +146,7 @@ nav #navlinks #socials a {
   border: none;
   outline: none;
   color: white;
+  cursor: pointer;
 }
 
 .contactcontent .contactform h1 {
@@ -165,17 +170,32 @@ nav #navlinks #socials a {
   border: none;
   outline: none;
   color: white;
+  cursor: pointer;
 }
 
 .contactcontent .sidenav input {
   width: 100%;
 }
 
+.contactcontent .sidenav .formitem input {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contactcontent .sidenav .formitem input[type="submit"] {
+  width: 100px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 20px;
+}
+
 .contactcontent .sidenav h1 {
   border-top: 1px black solid;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 35px;
+  margin-top: 28px;
 }
 
 .contactcontent .sidenav h1 span {
@@ -187,6 +207,68 @@ nav #navlinks #socials a {
   bottom: 25px;
   padding: 0 8px;
   background-color: #fcf3ed;
+}
+
+.contactcontent .sidenav p {
+  text-align: center;
+  color: #3b3b3b;
+  margin-bottom: 10px;
+}
+
+.contactcontent .sidenav select {
+  width: 100%;
+  padding: 10px;
+  background-color: #fcf3ed;
+  border: 0.5px lightgrey solid;
+  cursor: pointer;
+}
+
+.contactcontent .sidenav .posts .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactcontent .sidenav .posts .post .photo {
+  width: 100%;
+  height: 150px;
+  background-position: center;
+  background-size: cover;
+}
+
+.contactcontent .sidenav .posts .post .photo:nth-child(0) {
+  background-image: url("/src/public/images/photo9.jpg");
+}
+
+.contactcontent .sidenav .posts .post .photo:nth-child(1) {
+  background-image: url("/src/public/images/photo12.png");
+}
+
+.contactcontent .sidenav .posts .post .photo:nth-child(2) {
+  background-image: url("/src/public/images/photo10.png");
+}
+
+.contactcontent .sidenav .posts .post h4 {
+  background-color: #fcf3ed;
+  text-align: center;
+  position: relative;
+  bottom: 18px;
+  width: 80%;
+  cursor: pointer;
+}
+
+.contactcontent .sidenav .posts .post h4:hover {
+  opacity: 0.6;
 }
 
 footer {

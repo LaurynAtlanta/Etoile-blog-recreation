@@ -71,6 +71,7 @@ $lightpink:  #fcf3ed;
         border: none;
         outline: none;
         color: white;
+        cursor: pointer;
     }
 }
 
@@ -96,7 +97,7 @@ body{
 nav{
     padding: 0 170px;
     @include flexspace;
-    height: 15vh;
+    height: 13vh;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
@@ -109,7 +110,8 @@ nav{
 
         a{
             text-decoration: none;
-            font-size: 50px;
+            font-size: 40px;
+            padding-left: 20px;
             color: black;
         }
     }
@@ -169,7 +171,9 @@ nav{
     }
 
     .contactform{
+        align-self: flex-start;
         @include submit;
+        margin-top: 50px;
         margin-right: 40px;
         width: 100%;
         h1{
@@ -183,16 +187,28 @@ nav{
         width: 450px;
         @include submit;
         margin-top: 75px;
-
         input{
             width: 100%;
+        }
+
+        .formitem{
+            input{
+                width: 100%;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            input[type="submit"]{
+                width: 100px;
+                align-self: center;
+                margin-bottom: 20px;
+            }
         }
 
         h1{
             border-top: 1px black solid;
             text-align: center;
             text-transform: uppercase;
-            margin-top: 35px;
+            margin-top: 28px;
             span{
                 font-family: $sansserif;
                 font-weight: 500;
@@ -204,6 +220,52 @@ nav{
                 background-color: $lightpink;
             }
         }
+        p{
+            text-align: center;
+            color: rgb(59, 59, 59);
+            margin-bottom: 10px;
+        }
+
+        select{
+            width: 100%;
+            padding: 10px;
+            background-color: $lightpink;
+            border: 0.5px lightgrey solid;
+            cursor: pointer;
+        }
+
+        .posts{
+            .post{
+                @include flexColumn;
+                .photo{
+                    width: 100%;
+                    height: 150px;
+                    @include featuredimage;
+                }
+                .photo:nth-child(0){
+                    background-image: url('/src/public/images/photo9.jpg');
+                }
+                .photo:nth-child(1){
+                    background-image: url('/src/public/images/photo12.png');
+                }
+                .photo:nth-child(2){
+                    background-image: url('/src/public/images/photo10.png');
+                }
+
+                h4{
+                    background-color: $lightpink;
+                    text-align: center;
+                    position: relative;
+                    bottom: 18px;
+                    width: 80%;
+                    cursor: pointer;
+                }
+                h4:hover{
+                    opacity: 0.6;
+                }
+            }
+        }
+
     }
 }
 

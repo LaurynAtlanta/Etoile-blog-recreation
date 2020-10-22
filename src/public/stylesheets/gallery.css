@@ -21,7 +21,15 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 15vh;
+  height: 13vh;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
+  background-color: #fcf3ed;
+  z-index: 2;
 }
 
 nav #logo {
@@ -33,7 +41,8 @@ nav #logo {
 
 nav #logo a {
   text-decoration: none;
-  font-size: 50px;
+  font-size: 40px;
+  padding-left: 20px;
   color: black;
 }
 
@@ -84,22 +93,48 @@ nav #navlinks #socials a {
 }
 
 .gallerysection {
-  margin: 50px 170px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 0 4px;
+  margin: 150px 170px;
+  /* Create four equal columns that sits next to each other */
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 }
 
-.gallerysection img {
-  width: 250px;
+.gallerysection .gallerycolumn {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  max-width: 25%;
+  padding: 0 10px;
+}
+
+.gallerysection .gallerycolumn img {
+  margin-top: 20px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .gallerysection .gallerycolumn {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gallerysection .gallerycolumn {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
 }
 
 footer {
