@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etoile | Contact</title>
-    <link rel="stylesheet" href="../src/public/stylesheets/styles.css">
+    <link rel="stylesheet" href="../src/public/stylesheets/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
 <body>
@@ -35,21 +35,21 @@
         <div class="contactform">
             <h1>Contact</h1>
             <form action="">
-                <div class="name">
-                    <label for="name">Your Name(required)</label>
+                <div class="formitem">
+                    <label for="name">Your Name (required)</label>
                     <input type="text" name="name">
                 </div>
-                <div class="email">
-                    <label for="email">Your Email(required)</label>
+                <div class="formitem">
+                    <label for="email">Your Email (required)</label>
                     <input type="text" name="email">
                 </div>
-                <div class="subject">
+                <div class="formitem">
                     <label for="subject">Subject</label>
                     <input type="text" name="subject">
                 </div>
-                <div class="yourmessage">
-                    <label for="message">Your Message</label>
-                    <input type="text" name="message">
+                <div class="formitem">
+                    <label for="">Your Message</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
                 <input type="submit" value="SEND">
             </form>
@@ -64,8 +64,10 @@
                 </h1>
                 <p>Enter your email address to subscribe:</p>
                 <form action="">
-                    <input type="text" placeholder="Enter your email">
-                    <input type="submit" value="SUBSCRIBE">
+                    <div class="formitem">
+                        <input type="text" placeholder="Enter your email">
+                        <input type="submit" value="SUBSCRIBE">
+                    </div>
                 </form>
             </div>
             <div class="wishlist">
@@ -117,5 +119,6 @@
         </div>
     </footer>
     
+    <script src="js/contact.js"></script>
 </body>
 </html>
