@@ -4,6 +4,12 @@ $serif: 'Merriweather', serif;
 $sansserif: 'Montserrat', sans-serif;
 $logofont: 'Mr Dafoe', cursive;
 $lightpink:  #fcf3ed;
+$mobiledevices: 500px;
+$middledevices: 700px;
+$tablets:768px;
+$middletablet: 888px;
+$laptops:1024px;
+$desktop: 1200px;
 
 // ========================================================
 //MIXINS
@@ -93,6 +99,14 @@ $lightpink:  #fcf3ed;
         position: absolute;
         border: 10px solid $lightpink;
     }
+    @media only screen and (max-width:$tablets) {
+        .firstimage{
+            height: 50vh;
+        }
+        .secondimage{
+            display: none;
+        }
+    }
 
 }
 
@@ -125,6 +139,13 @@ nav{
     background-color: $lightpink;
     z-index: 2;
 
+    @media only screen and (max-width:$middledevices ) {
+        height: 18vh;
+    }
+    @media only screen and (max-width:$laptops) {
+        padding: 0 10%;
+    }
+
     #logo{
         flex: 1;
         font-family: $logofont;
@@ -142,8 +163,6 @@ nav{
         @include flexspace;
         list-style: none;
         li{
-
-
             a{
                 text-decoration: none;
                 font-family: $sansserif;
@@ -156,12 +175,20 @@ nav{
                 color:rgb(57, 116, 136);
             }
         }
+        @media only screen and (max-width:$middledevices){
+                flex-direction: column;
+                align-items: initial;
+                margin-left: 50%;
+        }
 
         #socials{
             @include flexspace;
             list-style: none;
             a{
                 margin-right: 10px;
+            }
+            @media only screen and (max-width:$middletablet) {
+                display: none;
             }
         }
     }
@@ -208,6 +235,25 @@ nav{
         top:22%;
         left:0;
     }
+
+    @media only screen and (max-width:$laptops) {
+        margin: 0 8%;
+        .slidercontent{
+            top:35%;
+            width: 40%;
+            left: 50%;
+        }
+    }
+    @media only screen and (max-width:$mobiledevices ) {
+        .slidercontent{
+            top:30%;
+            width: 45%;
+            left: 45%;
+        }
+        #whiteslider{
+            top:24%;
+        }
+     }
     
 }
 
@@ -219,9 +265,14 @@ nav{
     margin: 0px 170px;
     @include posts;
 
+    @media only screen and (max-width:$laptops) {
+        margin: 0 9%;
+    }
+
     .post{
         margin: 80px 0px;
     }
+
 
     .one{
         .firstimage{
@@ -235,6 +286,9 @@ nav{
         .postcontent{
             top: 112%;
             right: 11%;
+            @media only screen and (max-width:$mobiledevices ) {
+                top:106%;
+             }
         }
     }
     .two{
@@ -250,6 +304,12 @@ nav{
         .postcontent{
             top: 287%;
             left: 11%;
+            @media only screen and (max-width:$tablets) {
+                top:175%;
+             }
+             @media only screen and (max-width:$mobiledevices ) {
+                top:165%;
+             }
         }
     } 
     .three{
@@ -260,10 +320,19 @@ nav{
             background-image: url('/src/public/images/photo10.png');
             top:360%;
             right:10%;
+            @media only screen and (max-width:$laptops) {
+                top: 365%;
+            }
         }
         .postcontent{
-            top: 334%;
+            top: 330%;
             right: 11%;
+            @media only screen and (max-width:$tablets) {
+                top:235%;
+             }
+            @media only screen and (max-width:$mobiledevices ) {
+                top:229%;
+            }
         }
     } 
     .four{
@@ -276,9 +345,25 @@ nav{
             right:10%;
         }
         .postcontent{
-            top: 509%;
+            top: 506%;
             right: 11%;
+
         }
+        @media only screen and (max-width:$tablets) {
+           .firstimage{
+               margin-left:auto;
+           }
+           .postcontent{
+               top: 295%;
+               left:11%;
+               right:0;
+           }
+         }
+         @media only screen and (max-width:$mobiledevices ) {
+             .postcontent{
+                 top:290%;
+             }
+         }
     } 
     .five{
         .firstimage{
@@ -288,10 +373,19 @@ nav{
             background-image: url('/src/public/images/photo1.jpg');
             top:585%;
             right:10%;
+            @media only screen and (max-width:$laptops) {
+                top:588%;
+            }
         }
         .postcontent{
-            top: 557%;
+            top: 553%;
             right: 11%;
+            @media only screen and (max-width:$tablets) {
+                top:355%;
+             }
+             @media only screen and (max-width:$mobiledevices ) {
+                top:350%;
+             }
         }
     } 
 }
@@ -299,13 +393,25 @@ nav{
 footer{
     background-color: black;
     color: white;
+    #socials{
+        display: none;
+        padding: 20px 30%;
+        list-style: none;
+        a{
+            margin-right: 10px;
+            color: white;
+        }
+    }
 
     .images{
         display: flex;
         align-items: center;
         .image{
-            width: 240px;
-            height:240px;
+            width: 16.66%;
+            height:32vh;
+            @media only screen and (max-width:$laptops) {
+                height: 25vh;
+            }
         }
         .image1{
             background-image: url('/src/public/images/photo7.png');
@@ -339,5 +445,22 @@ footer{
         font-family: $sansserif;
         text-transform: uppercase;
         font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:$tablets) {
+    footer{
+        #socials{
+            @include flexspace;
+        }
+    }
+}
+
+
+@media only screen and (max-width:$mobiledevices) {
+    footer{
+        .disclaimers{
+            padding:25px 10%;
+        }
     }
 }

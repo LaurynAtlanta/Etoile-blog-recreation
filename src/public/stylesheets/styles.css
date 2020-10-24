@@ -32,6 +32,18 @@ nav {
   z-index: 2;
 }
 
+@media only screen and (max-width: 700px) {
+  nav {
+    height: 18vh;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  nav {
+    padding: 0 10%;
+  }
+}
+
 nav #logo {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -75,6 +87,19 @@ nav #navlinks li a:hover {
   color: #397488;
 }
 
+@media only screen and (max-width: 700px) {
+  nav #navlinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    margin-left: 50%;
+  }
+}
+
 nav #navlinks #socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,6 +115,12 @@ nav #navlinks #socials {
 
 nav #navlinks #socials a {
   margin-right: 10px;
+}
+
+@media only screen and (max-width: 888px) {
+  nav #navlinks #socials {
+    display: none;
+  }
 }
 
 .indexcontent {
@@ -170,6 +201,28 @@ nav #navlinks #socials a {
   left: 0;
 }
 
+@media only screen and (max-width: 1024px) {
+  #slider {
+    margin: 0 8%;
+  }
+  #slider .slidercontent {
+    top: 35%;
+    width: 40%;
+    left: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #slider .slidercontent {
+    top: 30%;
+    width: 45%;
+    left: 45%;
+  }
+  #slider #whiteslider {
+    top: 24%;
+  }
+}
+
 .posts {
   margin: 0px 170px;
 }
@@ -237,6 +290,21 @@ nav #navlinks #socials a {
   border: 10px solid #fcf3ed;
 }
 
+@media only screen and (max-width: 768px) {
+  .posts .firstimage {
+    height: 50vh;
+  }
+  .posts .secondimage {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .posts {
+    margin: 0 9%;
+  }
+}
+
 .posts .post {
   margin: 80px 0px;
 }
@@ -256,6 +324,12 @@ nav #navlinks #socials a {
   right: 11%;
 }
 
+@media only screen and (max-width: 500px) {
+  .posts .one .postcontent {
+    top: 106%;
+  }
+}
+
 .posts .two .firstimage {
   background-image: url("/src/public/images/photo3.jpg");
   margin-left: auto;
@@ -272,6 +346,18 @@ nav #navlinks #socials a {
   left: 11%;
 }
 
+@media only screen and (max-width: 768px) {
+  .posts .two .postcontent {
+    top: 175%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .posts .two .postcontent {
+    top: 165%;
+  }
+}
+
 .posts .three .firstimage {
   background-image: url("/src/public/images/photo4.jpg");
 }
@@ -282,9 +368,27 @@ nav #navlinks #socials a {
   right: 10%;
 }
 
+@media only screen and (max-width: 1024px) {
+  .posts .three .secondimage {
+    top: 365%;
+  }
+}
+
 .posts .three .postcontent {
-  top: 334%;
+  top: 330%;
   right: 11%;
+}
+
+@media only screen and (max-width: 768px) {
+  .posts .three .postcontent {
+    top: 235%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .posts .three .postcontent {
+    top: 229%;
+  }
 }
 
 .posts .four .firstimage {
@@ -298,8 +402,25 @@ nav #navlinks #socials a {
 }
 
 .posts .four .postcontent {
-  top: 509%;
+  top: 506%;
   right: 11%;
+}
+
+@media only screen and (max-width: 768px) {
+  .posts .four .firstimage {
+    margin-left: auto;
+  }
+  .posts .four .postcontent {
+    top: 295%;
+    left: 11%;
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .posts .four .postcontent {
+    top: 290%;
+  }
 }
 
 .posts .five .firstimage {
@@ -312,13 +433,42 @@ nav #navlinks #socials a {
   right: 10%;
 }
 
+@media only screen and (max-width: 1024px) {
+  .posts .five .secondimage {
+    top: 588%;
+  }
+}
+
 .posts .five .postcontent {
-  top: 557%;
+  top: 553%;
   right: 11%;
+}
+
+@media only screen and (max-width: 768px) {
+  .posts .five .postcontent {
+    top: 355%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .posts .five .postcontent {
+    top: 350%;
+  }
 }
 
 footer {
   background-color: black;
+  color: white;
+}
+
+footer #socials {
+  display: none;
+  padding: 20px 30%;
+  list-style: none;
+}
+
+footer #socials a {
+  margin-right: 10px;
   color: white;
 }
 
@@ -332,8 +482,14 @@ footer .images {
 }
 
 footer .images .image {
-  width: 240px;
-  height: 240px;
+  width: 16.66%;
+  height: 32vh;
+}
+
+@media only screen and (max-width: 1024px) {
+  footer .images .image {
+    height: 25vh;
+  }
 }
 
 footer .images .image1 {
@@ -386,5 +542,25 @@ footer .disclaimers {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-size: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  footer #socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  footer .disclaimers {
+    padding: 25px 10%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
