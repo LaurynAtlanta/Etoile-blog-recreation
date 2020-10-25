@@ -125,6 +125,9 @@ body{
     background-color: $lightpink;
 }
 
+.slide{
+   display: none;
+}
 
 // ========================================================
 // NAVIGATION 
@@ -203,11 +206,12 @@ nav{
 }
 #slider{
     margin: 0 170px;
-        .sliderimage{
-            @include featuredimage;
-            background-image: url('../images/photo1.jpg');
+        .sliderimage img{
+            // @include featuredimage;
+            object-fit: cover;
             height: 80vh;
-            width: 75%;
+            min-width: 75%;
+            max-width: 100%;
         }
         .slidercontent{
             background-color: $lightpink;

@@ -10,6 +10,10 @@ body {
   background-color: #fcf3ed;
 }
 
+.slide {
+  display: none;
+}
+
 nav {
   padding: 0 170px;
   display: -webkit-box;
@@ -131,12 +135,12 @@ nav #navlinks #socials a {
   margin: 0 170px;
 }
 
-#slider .sliderimage {
-  background-position: center;
-  background-size: cover;
-  background-image: url("../images/photo1.jpg");
+#slider .sliderimage img {
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 80vh;
-  width: 75%;
+  min-width: 75%;
+  max-width: 100%;
 }
 
 #slider .slidercontent {

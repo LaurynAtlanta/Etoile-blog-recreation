@@ -1,38 +1,21 @@
 
 
-//slider
-let slide = document.querySelector('.slide');
-let sliderImage = slide.querySelector('.sliderimage');
-let sliderP = slide.querySelector('.sliderp');
-let sliderHeader = slide.querySelector('.sliderheader');
-let sliderCategory = slide.querySelector('.slidercategory');
-let sliderButton = slide.querySelector('button');
+var slideIndex = 0;
+showSlides();
 
-//first post
-let one =document.querySelector('.one');
-let postcontent = one.querySelector('.postcontent');
-let h1 = postcontent.querySelector('h1').textContent;
-let p = postcontent.querySelector('p').textContent;
-let category = postcontent.querySelector('.category').innerHTML;
-let button = postcontent.querySelector('button').innerHTML;
-
-let two =document.querySelector('.one');
-let postcontentsecond = two.querySelector('.postcontent');
-let h1second = postcontent.querySelector('h1').textContent;
-let psecond = postcontent.querySelector('p').textContent;
-let categorysecond = postcontent.querySelector('.category').innerHTML;
-let buttonsecond = postcontent.querySelector('button').innerHTML;
-
-
-setTimeout(function changeSlider(){
-  sliderImage.style.backgroundImage = 'url("/src/public/images/photo2.jpg")';
-  sliderP.textContent= p;
-  sliderHeader.textContent = h1;
-  sliderCategory.innerHTML = category;
-  sliderButton.innerHTML = button;
-  sliderImage.style.transition = "all 2s";
-}, 4000);
-
-changeSlider();
-
-
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  // var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  // for (i = 0; i < dots.length; i++) {
+  //   dots[i].className = dots[i].className.replace(" active", "");
+  // }
+  slides[slideIndex-1].style.display = "block";  
+  // dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
