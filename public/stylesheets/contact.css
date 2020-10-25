@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat:wght@300;400;500;700&family=Mr+Dafoe&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fcf3ed;
+}
+
+nav {
+  padding: 0 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 13vh;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
+  background-color: #fcf3ed;
+  z-index: 2;
+}
+
+nav #logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: "Mr Dafoe", cursive;
+}
+
+nav #logo a {
+  text-decoration: none;
+  font-size: 40px;
+  padding-left: 20px;
+  color: black;
+}
+
+nav #navlinks {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+nav #navlinks li a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: black;
+}
+
+nav #navlinks li a:hover {
+  color: #397488;
+}
+
+nav #navlinks #socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+nav #navlinks #socials a {
+  margin-right: 10px;
+}
+
+.contactcontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 90px 160px 50px;
+}
+
+.contactcontent .formitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactcontent label {
+  color: #414141;
+  font-size: 15px;
+}
+
+.contactcontent input[type="text"], .contactcontent textarea {
+  background-color: #fcf3ed;
+  outline: none;
+  border: 0.5px lightgrey solid;
+  padding: 9px;
+  margin: 3px 0 20px;
+}
+
+.contactcontent .contactform {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 50px;
+  margin-right: 40px;
+  width: 100%;
+}
+
+.contactcontent .contactform input[type="submit"] {
+  background-color: black;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  padding: 9px 12px;
+  font-size: 11px;
+  letter-spacing: 1.3px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+
+.contactcontent .contactform h1 {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.contactcontent .sidenav {
+  width: 450px;
+  margin-top: 75px;
+}
+
+.contactcontent .sidenav input[type="submit"] {
+  background-color: black;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  padding: 9px 12px;
+  font-size: 11px;
+  letter-spacing: 1.3px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+
+.contactcontent .sidenav input {
+  width: 100%;
+}
+
+.contactcontent .sidenav .formitem input {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contactcontent .sidenav .formitem input[type="submit"] {
+  width: 100px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 20px;
+}
+
+.contactcontent .sidenav h1 {
+  border-top: 1px black solid;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 28px;
+}
+
+.contactcontent .sidenav h1 span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  position: relative;
+  bottom: 25px;
+  padding: 0 8px;
+  background-color: #fcf3ed;
+}
+
+.contactcontent .sidenav p {
+  text-align: center;
+  color: #3b3b3b;
+  margin-bottom: 10px;
+}
+
+.contactcontent .sidenav select {
+  width: 100%;
+  padding: 10px;
+  background-color: #fcf3ed;
+  border: 0.5px lightgrey solid;
+  cursor: pointer;
+}
+
+.contactcontent .sidenav .posts .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactcontent .sidenav .posts .post .photo {
+  width: 100%;
+  height: 150px;
+  background-position: center;
+  background-size: cover;
+}
+
+.contactcontent .sidenav .posts .post .photo:nth-child(0) {
+  background-image: url("/src/public/images/photo9.jpg");
+}
+
+.contactcontent .sidenav .posts .post .photo:nth-child(1) {
+  background-image: url("/src/public/images/photo12.png");
+}
+
+.contactcontent .sidenav .posts .post .photo:nth-child(2) {
+  background-image: url("/src/public/images/photo10.png");
+}
+
+.contactcontent .sidenav .posts .post h4 {
+  background-color: #fcf3ed;
+  text-align: center;
+  position: relative;
+  bottom: 18px;
+  width: 80%;
+  cursor: pointer;
+}
+
+.contactcontent .sidenav .posts .post h4:hover {
+  opacity: 0.6;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .images .image {
+  width: 240px;
+  height: 240px;
+}
+
+footer .images .image1 {
+  background-image: url("/src/public/images/photo7.png");
+  background-position: center;
+  background-size: cover;
+}
+
+footer .images .image2 {
+  background-image: url("/src/public/images/photo8.png");
+  background-position: center;
+  background-size: cover;
+}
+
+footer .images .image3 {
+  background-image: url("/src/public/images/photo9.png");
+  background-position: center;
+  background-size: cover;
+}
+
+footer .images .image4 {
+  background-image: url("/src/public/images/photo10.png");
+  background-position: center;
+  background-size: cover;
+}
+
+footer .images .image5 {
+  background-image: url("/src/public/images/photo11.png");
+  background-position: center;
+  background-size: cover;
+}
+
+footer .images .image6 {
+  background-image: url("/src/public/images/photo12.png");
+  background-position: center;
+  background-size: cover;
+}
+
+footer .disclaimers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 150px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+/*# sourceMappingURL=contact.css.map */
