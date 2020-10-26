@@ -4,6 +4,12 @@ $serif: 'Merriweather', serif;
 $sansserif: 'Montserrat', sans-serif;
 $logofont: 'Mr Dafoe', cursive;
 $lightpink:  #fcf3ed;
+$mobiledevices: 500px;
+$middledevices: 700px;
+$tablets:768px;
+$middletablet: 888px;
+$laptops:1024px;
+$desktop: 1200px;
 
 // ========================================================
 //MIXINS
@@ -89,6 +95,13 @@ nav{
     background-color: $lightpink;
     z-index: 2;
 
+    @media only screen and (max-width:$middledevices ) {
+        height: 18vh;
+    }
+    @media only screen and (max-width:$laptops) {
+        padding: 0 10%;
+    }
+
     #logo{
         flex: 1;
         font-family: $logofont;
@@ -106,8 +119,6 @@ nav{
         @include flexspace;
         list-style: none;
         li{
-
-
             a{
                 text-decoration: none;
                 font-family: $sansserif;
@@ -120,12 +131,20 @@ nav{
                 color:rgb(57, 116, 136);
             }
         }
+        @media only screen and (max-width:$middledevices){
+                flex-direction: column;
+                align-items: initial;
+                margin-left: 50%;
+        }
 
         #socials{
             @include flexspace;
             list-style: none;
             a{
                 margin-right: 10px;
+            }
+            @media only screen and (max-width:$middletablet) {
+                display: none;
             }
         }
     }
@@ -145,7 +164,7 @@ nav{
         @include posts;
         @include flexColumn;
         .firstimage{
-            background-image: url('/src/public/images/photo2.jpg');
+            background-image: url('../images/photo2.jpg');
             @include featuredimage;
             width:350px;
             height:475px;
@@ -158,7 +177,7 @@ nav{
         @include posts;
         @include flexColumn;
         .firstimage{
-            background-image: url('/src/public/images/photo3.jpg');
+            background-image: url('../images/photo3.jpg');
             @include featuredimage;
             width:350px;
             height:475px;
@@ -171,7 +190,7 @@ nav{
         @include posts;
         @include flexColumn;
         .firstimage{
-            background-image: url('/src/public/images/photo4.jpg');
+            background-image: url('../images/photo4.jpg');
             @include featuredimage;
             width:350px;
             height:475px;
@@ -194,27 +213,27 @@ footer{
             height:240px;
         }
         .image1{
-            background-image: url('/src/public/images/photo7.png');
+            background-image: url('../images/photo7.png');
             @include featuredimage;
         }
         .image2{
-            background-image: url('/src/public/images/photo8.png');
+            background-image: url('../images/photo8.png');
             @include featuredimage;
         }
         .image3{
-            background-image: url('/src/public/images/photo9.png');
+            background-image: url('../images/photo9.png');
             @include featuredimage;
         }
         .image4{
-            background-image: url('/src/public/images/photo10.png');
+            background-image: url('../images/photo10.png');
             @include featuredimage;
         }
         .image5{
-            background-image: url('/src/public/images/photo11.png');
+            background-image: url('../images/photo11.png');
             @include featuredimage;
         }
         .image6{
-            background-image: url('/src/public/images/photo12.png');
+            background-image: url('../images/photo12.png');
             @include featuredimage;
         }
     }
@@ -225,5 +244,22 @@ footer{
         font-family: $sansserif;
         text-transform: uppercase;
         font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:$tablets) {
+    footer{
+        #socials{
+            @include flexspace;
+        }
+    }
+}
+
+
+@media only screen and (max-width:$mobiledevices) {
+    footer{
+        .disclaimers{
+            padding:25px 10%;
+        }
     }
 }

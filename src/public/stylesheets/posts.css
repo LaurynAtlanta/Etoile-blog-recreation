@@ -32,6 +32,18 @@ nav {
   z-index: 2;
 }
 
+@media only screen and (max-width: 700px) {
+  nav {
+    height: 18vh;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  nav {
+    padding: 0 10%;
+  }
+}
+
 nav #logo {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -75,6 +87,19 @@ nav #navlinks li a:hover {
   color: #397488;
 }
 
+@media only screen and (max-width: 700px) {
+  nav #navlinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    margin-left: 50%;
+  }
+}
+
 nav #navlinks #socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,6 +115,12 @@ nav #navlinks #socials {
 
 nav #navlinks #socials a {
   margin-right: 10px;
+}
+
+@media only screen and (max-width: 888px) {
+  nav #navlinks #socials {
+    display: none;
+  }
 }
 
 .posts {
@@ -142,7 +173,7 @@ nav #navlinks #socials a {
 }
 
 .posts .one .firstimage {
-  background-image: url("/src/public/images/photo2.jpg");
+  background-image: url("../images/photo2.jpg");
   background-position: center;
   background-size: cover;
   width: 350px;
@@ -202,7 +233,7 @@ nav #navlinks #socials a {
 }
 
 .posts .two .firstimage {
-  background-image: url("/src/public/images/photo3.jpg");
+  background-image: url("../images/photo3.jpg");
   background-position: center;
   background-size: cover;
   width: 350px;
@@ -262,7 +293,7 @@ nav #navlinks #socials a {
 }
 
 .posts .three .firstimage {
-  background-image: url("/src/public/images/photo4.jpg");
+  background-image: url("../images/photo4.jpg");
   background-position: center;
   background-size: cover;
   width: 350px;
@@ -305,37 +336,37 @@ footer .images .image {
 }
 
 footer .images .image1 {
-  background-image: url("/src/public/images/photo7.png");
+  background-image: url("../images/photo7.png");
   background-position: center;
   background-size: cover;
 }
 
 footer .images .image2 {
-  background-image: url("/src/public/images/photo8.png");
+  background-image: url("../images/photo8.png");
   background-position: center;
   background-size: cover;
 }
 
 footer .images .image3 {
-  background-image: url("/src/public/images/photo9.png");
+  background-image: url("../images/photo9.png");
   background-position: center;
   background-size: cover;
 }
 
 footer .images .image4 {
-  background-image: url("/src/public/images/photo10.png");
+  background-image: url("../images/photo10.png");
   background-position: center;
   background-size: cover;
 }
 
 footer .images .image5 {
-  background-image: url("/src/public/images/photo11.png");
+  background-image: url("../images/photo11.png");
   background-position: center;
   background-size: cover;
 }
 
 footer .images .image6 {
-  background-image: url("/src/public/images/photo12.png");
+  background-image: url("../images/photo12.png");
   background-position: center;
   background-size: cover;
 }
@@ -354,5 +385,25 @@ footer .disclaimers {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-size: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  footer #socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  footer .disclaimers {
+    padding: 25px 10%;
+  }
 }
 /*# sourceMappingURL=posts.css.map */
