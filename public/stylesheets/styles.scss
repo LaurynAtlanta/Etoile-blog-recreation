@@ -280,10 +280,10 @@ nav{
 
     .one{
         .firstimage{
-            background-image: url('.../public/images/photo2.jpg');
+            background-image: url('../images/photo2.jpg');
         }
         .secondimage{
-            background-image: url('.../public/images/photo1.jpg');
+            background-image: url('../images/photo1.jpg');
             top:140%;
             right:10%;
         }
@@ -297,11 +297,11 @@ nav{
     }
     .two{
         .firstimage{
-            background-image: url('.../public/images/photo3.jpg');
+            background-image: url('../images/photo3.jpg');
             margin-left: auto;
         }
         .secondimage{
-            background-image: url('.../public/images/photo11.png');
+            background-image: url('../images/photo11.png');
             top:230%;
             left:10%;
         }
@@ -318,10 +318,10 @@ nav{
     } 
     .three{
         .firstimage{
-            background-image: url('.../public/images/photo4.jpg');
+            background-image: url('../images/photo4.jpg');
         }
         .secondimage{
-            background-image: url('.../public/images/photo10.png');
+            background-image: url('../images/photo10.png');
             top:360%;
             right:10%;
             @media only screen and (max-width:$laptops) {
@@ -341,10 +341,10 @@ nav{
     } 
     .four{
         .firstimage{
-            background-image: url('.../public/images/photo5.jpg');
+            background-image: url('../images/photo5.jpg');
         }
         .secondimage{
-            background-image: url('.../public/images/photo1.jpg');
+            background-image: url('../images/photo1.jpg');
             top:450%;
             right:10%;
         }
@@ -371,10 +371,10 @@ nav{
     } 
     .five{
         .firstimage{
-            background-image: url('.../public/images/photo6.jpg');
+            background-image: url('../images/photo6.jpg');
         }
         .secondimage{
-            background-image: url('.../public/images/photo1.jpg');
+            background-image: url('../images/photo1.jpg');
             top:585%;
             right:10%;
             @media only screen and (max-width:$laptops) {
@@ -418,27 +418,27 @@ footer{
             }
         }
         .image1{
-            background-image: url('.../public/images/photo7.png');
+            background-image: url('../images/photo7.png');
             @include featuredimage;
         }
         .image2{
-            background-image: url('.../public/images/photo8.png');
+            background-image: url('../images/photo8.png');
             @include featuredimage;
         }
         .image3{
-            background-image: url('.../public/images/photo9.png');
+            background-image: url('../images/photo9.png');
             @include featuredimage;
         }
         .image4{
-            background-image: url('.../public/images/photo10.png');
+            background-image: url('../images/photo10.png');
             @include featuredimage;
         }
         .image5{
-            background-image: url('.../public/images/photo11.png');
+            background-image: url('../images/photo11.png');
             @include featuredimage;
         }
         .image6{
-            background-image: url('.../public/images/photo12.png');
+            background-image: url('../images/photo12.png');
             @include featuredimage;
         }
     }
