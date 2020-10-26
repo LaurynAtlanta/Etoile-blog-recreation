@@ -172,6 +172,15 @@ nav{
 .contactcontent{
     @include flexspace;
     margin: 90px 160px 50px;
+    @media only screen and (max-width:$laptops ) {
+        margin:90px 100px 50px;
+    }
+    @media only screen and (max-width:$tablets ) {
+        @include flexColumn;
+    }
+    @media only screen and (max-width:$mobiledevices ) {
+        margin: 80px 30px 50px;
+    }
 
     .formitem{
         display: flex;
