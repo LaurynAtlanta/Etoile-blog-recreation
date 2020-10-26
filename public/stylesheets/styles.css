@@ -314,11 +314,11 @@ nav #navlinks #socials a {
 }
 
 .posts .one .firstimage {
-  background-image: url("/src/public/images/photo2.jpg");
+  background-image: url(".../public/images/photo2.jpg");
 }
 
 .posts .one .secondimage {
-  background-image: url("/src/public/images/photo1.jpg");
+  background-image: url(".../public/images/photo1.jpg");
   top: 140%;
   right: 10%;
 }
@@ -335,12 +335,12 @@ nav #navlinks #socials a {
 }
 
 .posts .two .firstimage {
-  background-image: url("/src/public/images/photo3.jpg");
+  background-image: url(".../public/images/photo3.jpg");
   margin-left: auto;
 }
 
 .posts .two .secondimage {
-  background-image: url("/src/public/images/photo11.png");
+  background-image: url(".../public/images/photo11.png");
   top: 230%;
   left: 10%;
 }
@@ -363,11 +363,11 @@ nav #navlinks #socials a {
 }
 
 .posts .three .firstimage {
-  background-image: url("/src/public/images/photo4.jpg");
+  background-image: url(".../public/images/photo4.jpg");
 }
 
 .posts .three .secondimage {
-  background-image: url("/src/public/images/photo10.png");
+  background-image: url(".../public/images/photo10.png");
   top: 360%;
   right: 10%;
 }
@@ -396,11 +396,11 @@ nav #navlinks #socials a {
 }
 
 .posts .four .firstimage {
-  background-image: url("/src/public/images/photo5.jpg");
+  background-image: url(".../public/images/photo5.jpg");
 }
 
 .posts .four .secondimage {
-  background-image: url("/src/public/images/photo1.jpg");
+  background-image: url(".../public/images/photo1.jpg");
   top: 450%;
   right: 10%;
 }
@@ -428,11 +428,11 @@ nav #navlinks #socials a {
 }
 
 .posts .five .firstimage {
-  background-image: url("/src/public/images/photo6.jpg");
+  background-image: url(".../public/images/photo6.jpg");
 }
 
 .posts .five .secondimage {
-  background-image: url("/src/public/images/photo1.jpg");
+  background-image: url(".../public/images/photo1.jpg");
   top: 585%;
   right: 10%;
 }
@@ -497,37 +497,37 @@ footer .images .image {
 }
 
 footer .images .image1 {
-  background-image: url("/src/public/images/photo7.png");
+  background-image: url(".../public/images/photo7.png");
   background-position: center;
   background-size: cover;
 }
 
 footer .images .image2 {
-  background-image: url("/src/public/images/photo8.png");
+  background-image: url(".../public/images/photo8.png");
   background-position: center;
   background-size: cover;
 }
 
 footer .images .image3 {
-  background-image: url("/src/public/images/photo9.png");
+  background-image: url(".../public/images/photo9.png");
   background-position: center;
   background-size: cover;
 }
 
 footer .images .image4 {
-  background-image: url("/src/public/images/photo10.png");
+  background-image: url(".../public/images/photo10.png");
   background-position: center;
   background-size: cover;
 }
 
 footer .images .image5 {
-  background-image: url("/src/public/images/photo11.png");
+  background-image: url(".../public/images/photo11.png");
   background-position: center;
   background-size: cover;
 }
 
 footer .images .image6 {
-  background-image: url("/src/public/images/photo12.png");
+  background-image: url(".../public/images/photo12.png");
   background-position: center;
   background-size: cover;
 }
