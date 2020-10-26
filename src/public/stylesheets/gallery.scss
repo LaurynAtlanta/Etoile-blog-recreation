@@ -204,6 +204,15 @@ nav{
 footer{
     background-color: black;
     color: white;
+    #socials{
+        display: none;
+        padding: 20px 30%;
+        list-style: none;
+        a{
+            margin-right: 10px;
+            color: white;
+        }
+    }
 
     .images{
         display: flex;
@@ -211,6 +220,12 @@ footer{
         .image{
             width: 240px;
             height:240px;
+            @media only screen and (max-width:$laptops) {
+                height: 25vh;
+            }
+            @media only screen and (max-width:$mobiledevices) {
+                height: 100px;
+            }
         }
         .image1{
             background-image: url('../images/photo7.png');

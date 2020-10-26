@@ -416,6 +416,9 @@ footer{
             @media only screen and (max-width:$laptops) {
                 height: 25vh;
             }
+            @media only screen and (max-width:$mobiledevices) {
+                height: 100px;
+            }
         }
         .image1{
             background-image: url('../images/photo7.png');

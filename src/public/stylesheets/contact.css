@@ -217,7 +217,7 @@ nav #navlinks #socials a {
 }
 
 .contactcontent .sidenav {
-  width: 450px;
+  width: 400px;
   margin-top: 75px;
 }
 
@@ -316,7 +316,7 @@ nav #navlinks #socials a {
 }
 
 .contactcontent .sidenav .posts .post .photo:nth-child(2) {
-  background-image: url("/src/public/images/photo10.png");
+  background-image: url("/src/public/images/photo6.jpg");
 }
 
 .contactcontent .sidenav .posts .post h4 {
@@ -337,6 +337,17 @@ footer {
   color: white;
 }
 
+footer #socials {
+  display: none;
+  padding: 20px 30%;
+  list-style: none;
+}
+
+footer #socials a {
+  margin-right: 10px;
+  color: white;
+}
+
 footer .images {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -354,6 +365,12 @@ footer .images .image {
 @media only screen and (max-width: 1024px) {
   footer .images .image {
     height: 25vh;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  footer .images .image {
+    height: 100px;
   }
 }
 

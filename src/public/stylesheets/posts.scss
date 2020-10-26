@@ -47,6 +47,7 @@ $desktop: 1200px;
         font-weight: 600;
         font-size: 25px;
         @include links;
+        text-align: center;
     }
 
     p{
@@ -62,6 +63,7 @@ $desktop: 1200px;
 
     .postcontent{
         @include contentbasic;
+        @include flexColumn;
     }
 
 }
@@ -157,33 +159,53 @@ nav{
 // ========================================================
 
 .posts{
-    margin: 150px 170px 70px;
+    margin: 150px 10% 70px;
     @include flexspace;
+    @media only screen and (max-width:$desktop) {
+        margin:150px 8% 70px;
+    }
+    @media only screen and (max-width:$middletablet ) {
+        @include flexColumn;
+    }
+
+    .post{
+        padding-right: 15px;
+        .firstimage{
+            @include featuredimage;
+            width:350px;
+            height:67vh;
+            @media only screen and (max-width:$desktop) {
+                width: 300px;
+                height: 60vh;
+            }
+            @media only screen and (max-width:$laptops ) {
+                width: 250px;
+                height: 50vh;
+            }
+            @media only screen and (max-width:$middletablet ) {
+                width: 550px;
+                height: 70vh;
+            }
+            @media only screen and (max-width:$mobiledevices ) {
+                width: 450px;
+                height: 70vh;
+            }
+        }
+    }
 
     .one{
         @include posts;
         @include flexColumn;
         .firstimage{
             background-image: url('../images/photo2.jpg');
-            @include featuredimage;
-            width:350px;
-            height:475px;
-        }
-        .postcontent{
-            @include flexColumn;
         }
     }
+
     .two{
         @include posts;
         @include flexColumn;
         .firstimage{
             background-image: url('../images/photo3.jpg');
-            @include featuredimage;
-            width:350px;
-            height:475px;
-        }
-        .postcontent{
-            @include flexColumn;
         }
     } 
     .three{
@@ -191,19 +213,33 @@ nav{
         @include flexColumn;
         .firstimage{
             background-image: url('../images/photo4.jpg');
-            @include featuredimage;
-            width:350px;
-            height:475px;
-        }
-        .postcontent{
-            @include flexColumn;
         }
     } 
+    @media only screen and (max-width:$middletablet ) {
+        .post{
+            .postcontent{
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
+
+// ========================================================
+// FOOTER
+// ========================================================
 
 footer{
     background-color: black;
     color: white;
+    #socials{
+        display: none;
+        padding: 20px 30%;
+        list-style: none;
+        a{
+            margin-right: 10px;
+            color: white;
+        }
+    }
 
     .images{
         display: flex;
@@ -211,6 +247,12 @@ footer{
         .image{
             width: 240px;
             height:240px;
+            @media only screen and (max-width:$laptops) {
+                height: 25vh;
+            }
+            @media only screen and (max-width:$mobiledevices) {
+                height: 100px;
+            }
         }
         .image1{
             background-image: url('../images/photo7.png');
