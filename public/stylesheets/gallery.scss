@@ -4,6 +4,12 @@ $serif: 'Merriweather', serif;
 $sansserif: 'Montserrat', sans-serif;
 $logofont: 'Mr Dafoe', cursive;
 $lightpink:  #fcf3ed;
+$mobiledevices: 500px;
+$middledevices: 700px;
+$tablets:768px;
+$middletablet: 888px;
+$laptops:1024px;
+$desktop: 1200px;
 
 // ========================================================
 //MIXINS
@@ -89,6 +95,13 @@ nav{
     background-color: $lightpink;
     z-index: 2;
 
+    @media only screen and (max-width:$middledevices ) {
+        height: 18vh;
+    }
+    @media only screen and (max-width:$laptops) {
+        padding: 0 10%;
+    }
+
     #logo{
         flex: 1;
         font-family: $logofont;
@@ -106,8 +119,6 @@ nav{
         @include flexspace;
         list-style: none;
         li{
-
-
             a{
                 text-decoration: none;
                 font-family: $sansserif;
@@ -120,6 +131,11 @@ nav{
                 color:rgb(57, 116, 136);
             }
         }
+        @media only screen and (max-width:$middledevices){
+                flex-direction: column;
+                align-items: initial;
+                margin-left: 50%;
+        }
 
         #socials{
             @include flexspace;
@@ -127,9 +143,16 @@ nav{
             a{
                 margin-right: 10px;
             }
+            @media only screen and (max-width:$middletablet) {
+                display: none;
+            }
         }
     }
 }
+
+// ========================================================
+// Gallery Content
+// ========================================================
 
 
 .gallerysection {
@@ -137,6 +160,12 @@ nav{
     flex-wrap: wrap;
     padding: 0 4px;
     margin: 150px 170px;
+    @media only screen and (max-width:$desktop ) {
+        margin: 150px 100px;
+    }
+    @media only screen and (max-width:$middledevices ) {
+        margin: 150px 50px;
+    }
 
     /* Create four equal columns that sits next to each other */
     .gallerycolumn {
@@ -168,11 +197,22 @@ nav{
   }
   }
 
-
+// ========================================================
+// FOOTER
+// ========================================================
 
 footer{
     background-color: black;
     color: white;
+    #socials{
+        display: none;
+        padding: 20px 30%;
+        list-style: none;
+        a{
+            margin-right: 10px;
+            color: white;
+        }
+    }
 
     .images{
         display: flex;
@@ -180,29 +220,35 @@ footer{
         .image{
             width: 240px;
             height:240px;
+            @media only screen and (max-width:$laptops) {
+                height: 25vh;
+            }
+            @media only screen and (max-width:$mobiledevices) {
+                height: 100px;
+            }
         }
         .image1{
-            background-image: url('/src/public/images/photo7.png');
+            background-image: url('../images/photo7.png');
             @include featuredimage;
         }
         .image2{
-            background-image: url('/src/public/images/photo8.png');
+            background-image: url('../images/photo8.png');
             @include featuredimage;
         }
         .image3{
-            background-image: url('/src/public/images/photo9.png');
+            background-image: url('../images/photo9.png');
             @include featuredimage;
         }
         .image4{
-            background-image: url('/src/public/images/photo10.png');
+            background-image: url('../images/photo10.png');
             @include featuredimage;
         }
         .image5{
-            background-image: url('/src/public/images/photo11.png');
+            background-image: url('../images/photo11.png');
             @include featuredimage;
         }
         .image6{
-            background-image: url('/src/public/images/photo12.png');
+            background-image: url('../images/photo12.png');
             @include featuredimage;
         }
     }
@@ -213,5 +259,22 @@ footer{
         font-family: $sansserif;
         text-transform: uppercase;
         font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:$tablets) {
+    footer{
+        #socials{
+            @include flexspace;
+        }
+    }
+}
+
+
+@media only screen and (max-width:$mobiledevices) {
+    footer{
+        .disclaimers{
+            padding:25px 10%;
+        }
     }
 }

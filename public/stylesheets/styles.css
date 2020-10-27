@@ -496,6 +496,12 @@ footer .images .image {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  footer .images .image {
+    height: 100px;
+  }
+}
+
 footer .images .image1 {
   background-image: url("../images/photo7.png");
   background-position: center;
