@@ -308,15 +308,15 @@ nav #navlinks #socials a {
 }
 
 .contactcontent .sidenav .posts .post .photo:nth-child(0) {
-  background-image: url("/src/public/images/photo9.jpg");
+  background-image: url("../images/photo9.jpg");
 }
 
 .contactcontent .sidenav .posts .post .photo:nth-child(1) {
-  background-image: url("/src/public/images/photo12.png");
+  background-image: url("../images/photo12.png");
 }
 
 .contactcontent .sidenav .posts .post .photo:nth-child(2) {
-  background-image: url("/src/public/images/photo6.jpg");
+  background-image: url("../images/photo6.jpg");
 }
 
 .contactcontent .sidenav .posts .post h4 {

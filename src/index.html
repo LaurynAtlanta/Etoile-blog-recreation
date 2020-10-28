@@ -8,27 +8,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
 <body>
-    <nav>
-        <div id="logo">
-            <a href="index.html">Etoile</a>
-        </div>
-        <ul id="navlinks">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="photography.html">PHOTOGRAPHY</a></li>
-            <li><a href="music.html">MUSIC</a></li>
-            <li><a href="lifestyle.html">LIFESTYLE</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <ul id="socials">
-                <li><a href="http://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="http://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="http://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="http://www.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
-                <li><a href="http://www.gmail.com/"><i class="fas fa-envelope"></i></a></li>
-                <li><a href=""><i class="fas fa-search"></i></a></li>
-            </ul>
+    <nav class="navbar">
+        <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+                <i class="fa fa-bars"></i>
+            </label>
+        <a href="#" class="logo">Etoile</a>
+        <input type="checkbox" id="chkToggle"></input>
+        <ul class="main-nav" id="js-menu">
+            <li><a href="index.html" class="nav-links">HOME</a></li>
+            <li><a href="photography.html" class="nav-links">PHOTOGRAPHY</a></li>
+            <li><a href="music.html" class="nav-links">MUSIC</a></li>
+            <li><a href="lifestyle.html" class="nav-links">LIFESTYLE</a></li>
+            <li><a href="gallery.html" class="nav-links">GALLERY</a></li>
+            <li><a href="contact.html" class="nav-links">CONTACT</a></li>
+            <li>
+                <ul class="nav-links" id="socials">
+                    <li><a href="http://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="http://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="http://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="http://www.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
+                    <li><a href="http://www.gmail.com/"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href=""><i class="fas fa-search"></i></a></li>
+                </ul>
+            </li>
         </ul>
-    </nav>
+      </nav>
     <div class="indexcontent">
         <div id="slider">
             <div class="slide">
